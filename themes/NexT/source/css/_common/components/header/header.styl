@@ -1,0 +1,18 @@
+.header {
+  background: $head-bg no-repeat right bottom;
+  background-size: auto 100%;
+}
+
+.header-inner {
+  height: 380px;
+  position: relative;
+  margin-left: 0;
+
+  +mobile(){ height: 50px; }
+}
+
+@import "headerband";
+@import "site-meta";
+@import "site-nav";
+@import "menu";
+@import "github-banner" if hexo-config('github_banner');

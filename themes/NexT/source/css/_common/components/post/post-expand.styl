@@ -1,0 +1,88 @@
+// TODO: Refactor.
+
+.posts-expand {
+  padding-top: 40px;
+}
+
+@media (max-width: 767px) {
+  .posts-expand {
+    margin: 0 20px;
+  }
+
+  .post-body {
+    pre {
+      .gutter pre {
+        padding-right: 10px;
+      }
+    }
+
+    .highlight {
+      margin-left: 0px;
+      margin-right: 0px;
+      padding: 0;
+      .gutter pre {
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+.posts-expand .post-body {
+  +desktop() {
+    text-align: justify;
+  }
+
+  h2, h3, h4, h5, h6 {
+    padding-top: 10px;
+
+    .header-anchor {
+      float: right;
+      margin-left: 10px;
+      color: $grey-light;
+      border-bottom-style: none;
+      visibility: hidden;
+
+      &:hover {
+        color: inherit;
+      }
+    }
+
+    &:hover .header-anchor {
+      visibility: visible;
+    }
+  }
+
+  ul > li {
+    list-style: circle;
+  }
+
+  img {
+    box-sizing: border-box;
+    margin: 0 auto 25px;
+    padding: 3px;
+    border: 1px solid $gray-lighter;
+  }
+
+  .icon2 {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin: 3px 8px 0 8px;
+    border: none;
+    +desktop(){ height: 28px; }
+    +tablet(){ height: 28px; }
+    +mobile(){ height: 20px; }
+  }
+
+  .icon {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin: 5px 5px 0 5px;
+    border: none;
+    opacity: 0.5;
+    +desktop(){ height: 18px; }
+    +tablet(){ height: 18px; }
+    +mobile(){ height: 16px; }
+  }
+}
