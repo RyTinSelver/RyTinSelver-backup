@@ -186,6 +186,8 @@ footer:
     icp: XICP备XXXXXXXX号
 ```
 
+从2019年4月开始，工信部已经更换了域名，原来的域名“miitbeian.gov.cn”、“miibeian.gov.cn”已经停止使用，所以如果你的NexT版本较老的话，在 `themes/NexT/layout/_partials/footer.swig` 中将 `http://www.miitbeian.gov.cn/` 改为 `http://www.beian.miit.gov.cn/`。
+
 
 
 ### 4.4 文章知识版权
