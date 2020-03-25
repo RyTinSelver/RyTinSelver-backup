@@ -90,7 +90,7 @@ footer:
   # Beian icp information for Chinese users. In China, every legal website should have a beian icp in website footer.
   # http://www.miitbeian.gov.cn
   beian:
-    enable: false
+    enable: true
     icp: 沪ICP备19005039号
 
   # -------------------------------------------------------------
