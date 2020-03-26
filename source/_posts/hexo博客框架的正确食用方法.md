@@ -3,7 +3,7 @@ title: hexo博客框架的正确食用方法
 category: Hexo
 top: 10
 tags:
-  - Instructions
+  - Tutorial
   - Hexo
   - Github
   - COS
@@ -30,7 +30,9 @@ date: 2019-03-02 12:10:31
 
 ​    [官方网站](https://hexo.io)
 
-## 0.准备工作
+
+
+## 0	准备工作
 
 **1. 一台设备（Windows/macOS/Linux/Android）**
 
@@ -48,7 +50,7 @@ date: 2019-03-02 12:10:31
 
 ​	点击新建工作空间
 
-![Create Workspace](https://img.rytinselver.com/Hexo/8496/create-workspace.png)
+![Create Workspace](https://img.rytinselver.com/blog/Hexo/8496/create-workspace.png)
 
 ​	如果部署在Coding上，则来源选择腾讯云开发者平台，部署在Github/Gitee上，就选择其他Git仓库，并将SSH秘钥添加到Github/Gitee的个人设置中（后文步骤2中有详细写）
 
@@ -60,7 +62,7 @@ date: 2019-03-02 12:10:31
 
 ​	然后就可以直接根据后文步骤初始化hexo了
 
-![Cloud Studio Workspace](https://img.rytinselver.com/Hexo/8496/cloudstudio-workspace.png)
+![Cloud Studio Workspace](https://img.rytinselver.com/blog/Hexo/8496/cloudstudio-workspace.png)
 
 ---
 
@@ -167,7 +169,9 @@ date: 2019-03-02 12:10:31
 	$ npm config set registry https://registry.npm.taobao.org
    ```
 
-## 1. 安装并配置Hexo
+
+
+## 1	安装并配置Hexo
 
 **1. 安装Hexo**
 
@@ -209,7 +213,7 @@ date: 2019-03-02 12:10:31
 
 ​	打开后网页大概是这样：
 
-![Landscape](https://img.rytinselver.com/Hexo/8496/theme-landscape.png)
+![Landscape](https://img.rytinselver.com/blog/Hexo/8496/theme-landscape.png)
 
 ​	关于更多hexo命令可以查询官方文档：[hexo命令](https://hexo.io/zh-cn/docs/commands)
 
@@ -235,7 +239,9 @@ date: 2019-03-02 12:10:31
 
 ​	推荐使用编辑器：[Atom](https://atom.io/)（macOS用户也可以使用Xcode）
 
-## 2. 配置Git和SSH
+
+
+## 2	配置Git和SSH
 
 ​	在Github/Gitee/Coding上部署博客需要配置Git全局变量和SSH秘钥
 
@@ -261,7 +267,7 @@ date: 2019-03-02 12:10:31
 
 ​	输出的代码中会有保存路径，进入路径看到以下三个文件
 
-![SSH_RSA](https://img.rytinselver.com/Hexo/8496/ssh_rsa.png)
+![SSH_RSA](https://img.rytinselver.com/blog/Hexo/8496/ssh_rsa.png)
 
 ​	其中，`id_rsa`是这台设备的私人秘钥，`id_rsa.pub`是公共秘钥，我们只需要公共秘钥
 
@@ -271,7 +277,7 @@ date: 2019-03-02 12:10:31
 
 ​	Github：点击右上角头像 → Settings → SSH and GPG keys  → New SSH key
 
-![Github Add SSH Key](https://img.rytinselver.com/Hexo/8496/github-add-ssh-key.png)
+![Github Add SSH Key](https://img.rytinselver.com/blog/Hexo/8496/github-add-ssh-key.png)
 
 ​	填写完毕后点击Add SSH key添加即可
 
@@ -281,7 +287,7 @@ date: 2019-03-02 12:10:31
 
 ​	Gitee：点击右上角头像 → 设置 → SSH公钥
 
-![Gitee Add SSH Key](https://img.rytinselver.com/Hexo/8496/gitee-add-ssh-key.png)
+![Gitee Add SSH Key](https://img.rytinselver.com/blog/Hexo/8496/gitee-add-ssh-key.png)
 
 ​	填写完毕后点击确定即可
 
@@ -293,13 +299,15 @@ date: 2019-03-02 12:10:31
 
 ​	可以设置有效期，一般设置永久有效
 
-![Coding Add SSH Key](https://img.rytinselver.com/Hexo/8496/coding-add-ssh-key.png)
+![Coding Add SSH Key](https://img.rytinselver.com/blog/Hexo/8496/coding-add-ssh-key.png)
 
 ​	点击添加
 
 ​	命令行中输入`ssh -T git@dev.tencent.com`查看是否成功
 
-## 3. 部署Hexo
+
+
+## 3	部署Hexo
 
 ​	使用Git仓库：
 
@@ -319,19 +327,21 @@ date: 2019-03-02 12:10:31
 	$ npm install hexo-deployer-cos --save //使用--save安装依赖到本文件夹，会记录到package.json中的dependencies内
    ```
 
-### 3.1 部署Hexo至Github
+
+
+### 3.1	部署Hexo至Github
 
 ​	创建Github仓库：点击右上角加号+ → New repository
 
 ​	Repository name必须填写`用户名.github.io`，并选择公共仓库
 
-![Github New Repository](https://img.rytinselver.com/Hexo/8496/github-new-repository.png)
+![Github New Repository](https://img.rytinselver.com/blog/Hexo/8496/github-new-repository.png)
 
 ​	点击Create repository
 
 ​	然后复制仓库的SSH链接（注意一定要选择Use SSH）
 
-![Github UseSSH](https://img.rytinselver.com/Hexo/8496/github-usessh.png)
+![Github UseSSH](https://img.rytinselver.com/blog/Hexo/8496/github-usessh.png)
 
 ​	打开配置文件`_config.yml`定位到`deploy`属性
 
@@ -352,7 +362,7 @@ date: 2019-03-02 12:10:31
 
 ​	在github仓库中选择Settings，找到Github Pages选项并打开
 
-![Github Pages](https://img.rytinselver.com/Hexo/8496/github-pages.png)
+![Github Pages](https://img.rytinselver.com/blog/Hexo/8496/github-pages.png)
 
 ​	支持自定义域名（在域名注册商那里设置DNS解析，新建CNAME记录地址`用户名.github.io`）
 
@@ -362,19 +372,21 @@ date: 2019-03-02 12:10:31
 
 ​	等待五分钟左右，打开网站查看是否成功部署
 
-### 3.2 部署Hexo到Gitee
+
+
+### 3.2	部署Hexo到Gitee
 
 ​	创建Gitee仓库：点击右上角加号+ → 新建仓库
 
 ​	仓库名称必须填`用户名`，可以选择私人仓库或者公共仓库
 
-![Gitee New Repository](https://img.rytinselver.com/Hexo/8496/gitee-new-repository.png)
+![Gitee New Repository](https://img.rytinselver.com/blog/Hexo/8496/gitee-new-repository.png)
 
 ​	点击创建
 
 ​	然后复制仓库的SSH链接（注意一定要选择SSH）
 
-![Gitee UseSSH](https://img.rytinselver.com/Hexo/8496/gitee-usessh.png)
+![Gitee UseSSH](https://img.rytinselver.com/blog/Hexo/8496/gitee-usessh.png)
 
 ​	打开配置文件`_config.yml`定位到`deploy`属性
 
@@ -397,7 +409,7 @@ date: 2019-03-02 12:10:31
 
 ​	选择部署分支，点击启动
 
-![Gitee Pages](https://img.rytinselver.com/Hexo/8496/gitee-pages.png)
+![Gitee Pages](https://img.rytinselver.com/blog/Hexo/8496/gitee-pages.png)
 
 ​	更改分支为静态网站文件所在的分支
 
@@ -411,13 +423,15 @@ date: 2019-03-02 12:10:31
 
 ​	等待五分钟左右，打开网站查看是否成功部署
 
-### 3.3 部署Hexo到Coding（dev.tencent）
+
+
+### 3.3	部署Hexo到Coding（dev.tencent）
 
 ​	创建Coding仓库：点击右上角加号+ → 项目
 
 ​	项目地址必须填`用户名.coding.me`，项目名称可以随意，选择Git仓库
 
-![Coding New Project](https://img.rytinselver.com/Hexo/8496/coding-new-project.png)
+![Coding New Project](https://img.rytinselver.com/blog/Hexo/8496/coding-new-project.png)
 
 ​	点击新建项目
 
@@ -425,7 +439,7 @@ date: 2019-03-02 12:10:31
 
 ​	复制SSH链接（左边下拉框选择SSH）
 
-![Coding UseSSH](https://img.rytinselver.com/Hexo/8496/coding-usessh.png)
+![Coding UseSSH](https://img.rytinselver.com/blog/Hexo/8496/coding-usessh.png)
 
 ​	打开配置文件`_config.yml`定位到`deploy`属性
 
@@ -450,7 +464,7 @@ date: 2019-03-02 12:10:31
 
 ​	部署成功后可以点击右上角设置图标进行自定义设置
 
-![Coding Pages](https://img.rytinselver.com/Hexo/8496/coding-pages.png)
+![Coding Pages](https://img.rytinselver.com/blog/Hexo/8496/coding-pages.png)
 
 ​	更改分支为静态网站文件所在的分支
 
@@ -466,19 +480,21 @@ date: 2019-03-02 12:10:31
 
 ​	等待五分钟左右，打开网站查看是否成功部署
 
-### 3.4 部署Hexo至腾讯云COS
+
+
+### 3.4	部署Hexo至腾讯云COS
 
 ​	创建储存桶
 
 ​	名称随意，地域自己看着选，选择私有读或者公有读私有写
 
-![COS New Bucket](https://img.rytinselver.com/Hexo/8496/cos-new-bucket.png)
+![COS New Bucket](https://img.rytinselver.com/blog/Hexo/8496/cos-new-bucket.png)
 
 ​	点击秘钥管理，前往云API秘钥管理
 
 ​	点击新建秘钥（如果已经有了就不需要新建）
 
-![COS New API](https://img.rytinselver.com/Hexo/8496/cos-new-api.png)
+![COS New API](https://img.rytinselver.com/blog/Hexo/8496/cos-new-api.png)
 
 ​	复制APPID、SecretId、SecretKey
 
@@ -504,11 +520,11 @@ date: 2019-03-02 12:10:31
 
 ​	在储存桶基础配置里打开静态网站
 
-![COS Pages](https://img.rytinselver.com/Hexo/8496/cos-pages.png)
+![COS Pages](https://img.rytinselver.com/blog/Hexo/8496/cos-pages.png)
 
 ​	在域名管理中设置自定义加速域名，源站类型选择静态网站源站，如果储存桶为私有读则需开启回源鉴权并添加CDN服务授权，域名一定要备案
 
-![COS CDN](https://img.rytinselver.com/Hexo/8496/cos-cdn.png)
+![COS CDN](https://img.rytinselver.com/blog/Hexo/8496/cos-cdn.png)
 
 ​	CDN设置中打开高级配置
 
@@ -518,7 +534,7 @@ date: 2019-03-02 12:10:31
 
 ​	可以打开带宽封顶来避免网站被流量攻击
 
-![CDN HTTPS](https://img.rytinselver.com/Hexo/8496/cdn-https.png)
+![CDN HTTPS](https://img.rytinselver.com/blog/Hexo/8496/cdn-https.png)
 
 ​	回源配置中关闭Range回源
 
@@ -526,7 +542,9 @@ date: 2019-03-02 12:10:31
 
 ​	等待五分钟左右，打开网站查看是否成功部署
 
-## 4. 修改Hexo主题
+
+
+## 4	修改Hexo主题
 
 ​	在官网下载好看的主题：[主题下载](https://hexo.io/themes/)
 
@@ -542,7 +560,9 @@ date: 2019-03-02 12:10:31
 
 ​	你还可以根据主题的说明更改主题配置`/主题名/_config.yml`
 
-## 5. 发布文章
+
+
+## 5	发布文章
 
 ​	新建文章
 
@@ -593,7 +613,7 @@ date: 2019-03-02 12:10:31
 
 
 
-## 6. 添加新页面
+## 6	添加新页面
 
    ```
 	$ hexo new page 页面名
@@ -602,6 +622,8 @@ date: 2019-03-02 12:10:31
 ​	这样会在`source`文件夹下新建一个`页面名`文件夹
 
 ​	你可以在主题中将它加入sidebar或navbar
+
+
 
 ## 结束语
 

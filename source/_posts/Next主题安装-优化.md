@@ -3,7 +3,7 @@ title: Next主题安装&优化
 category: Hexo
 top: 10
 tags:
-  - Instructions
+  - Tutorial
   - Hexo
   - Next
   - Personalize
@@ -19,7 +19,7 @@ date: 2019-04-06 21:48:49
 
 ---
 
-## 1.初识Next主题
+## 1	初识Next主题
 
 - 6.0以前旧版官网：[链接](http://theme-next.iissnan.com/)
 
@@ -29,7 +29,7 @@ date: 2019-04-06 21:48:49
 
 
 
-## 2.Next主题安装
+## 2	Next主题安装
 
 通过克隆整个repo安装Next（最简单）:
 
@@ -42,7 +42,7 @@ $ git clone https://github.com/theme-next/hexo-theme-next themes/next
 
 
 
-## 3.Next主题更新
+## 3	Next主题更新
 
 你可以通过如下命令更新到最新的 master 分支：
 
@@ -56,7 +56,7 @@ $ git pull
 
 
 
-## 4.配置Next主题
+## 4	配置Next主题
 
 好了以下才是正文（滑稽）
 
@@ -80,7 +80,7 @@ $ git pull
 
 
 
-### 4.1 更改favicon
+### 4.1	更改favicon
 
 favicon是网站图标(favorites icon)的缩写
 
@@ -100,7 +100,7 @@ favicon:
 
 
 
-### 4.2 rss订阅
+### 4.2	rss订阅
 
 将主题配置文件中的`rss`留空即可
 
@@ -114,9 +114,9 @@ $ npm install hexo-generator-feed --save
 
 
 
-### 4.3 网页底部
+### 4.3	网页底部
 
-#### 4.3.1 显示版权信息和年份
+#### 4.3.1	显示版权信息和年份
 
 主题配置文件：
 
@@ -155,7 +155,7 @@ footer:
 
 
 
-#### 4.3.2 年份和版权信息中间显示跳动的爱心
+#### 4.3.2	年份和版权信息中间显示跳动的爱心
 
 主题配置文件：
 
@@ -174,7 +174,7 @@ footer:
 
 
 
-#### 4.3.3 备案信息
+#### 4.3.3	备案信息
 
 在网页底部显示网站备案信息
 
@@ -190,7 +190,7 @@ footer:
 
 
 
-### 4.4 文章知识版权
+### 4.4	文章知识版权
 
 主题配置文件：
 
@@ -214,7 +214,7 @@ creative_commons:
 
 
 
-### 4.5 SEO优化
+### 4.5	SEO优化
 
 主题配置文件：
 
@@ -237,7 +237,7 @@ exturl: true
 
 
 
-### 4.6 导航栏菜单
+### 4.6	导航栏菜单
 
 主题配置文件：
 
@@ -294,7 +294,7 @@ menu:
 
 
 
-### 4.7 选择主题样式
+### 4.7	选择主题样式
 
 Next主题提供了四种主题样式，可以在Github上找到demo，选择一个你喜欢的即可
 
@@ -310,7 +310,7 @@ scheme: Mist
 
 
 
-### 4.8 侧边栏设置
+### 4.8	侧边栏设置
 
 主题配置文件：
 
@@ -322,7 +322,7 @@ site_state: true
 
 
 
-#### 4.8.1 添加社交链接
+#### 4.8.1	添加社交链接
 
 你可以添加你的社交媒体链接
 
@@ -358,7 +358,7 @@ social_icons:
 
 
 
-#### 4.8.2 右上角Follow me on Github按钮
+#### 4.8.2	右上角Follow me on Github按钮
 
 主题配置文件：
 
@@ -370,7 +370,7 @@ social_icons:
 
 
 
-#### 4.8.3 添加友链
+#### 4.8.3	添加友链
 
 主题配置文件：
 
@@ -386,7 +386,7 @@ links:
 
 
 
-#### 4.8.4 侧边栏头像
+#### 4.8.4	侧边栏头像
 
 主题配置文件：
 
@@ -407,7 +407,7 @@ avatar:
 
 
 
-#### 4.8.5 文章目录
+#### 4.8.5	文章目录
 
 主题配置文件：
 
@@ -425,7 +425,7 @@ toc:
 
 
 
-#### 4.8.6 其他设置（返回顶部按钮等）
+#### 4.8.6	其他设置（返回顶部按钮等）
 
 主题配置文件：
 
@@ -461,9 +461,9 @@ sidebar:
 
 
 
-### 4.9 文章设置
+### 4.9	文章设置
 
-#### 4.9.1 摘要&阅读全文
+#### 4.9.1	摘要&阅读全文
 
 主题配置文件：
 
@@ -489,7 +489,7 @@ read_more_btn: true
 
 
 
-#### 4.9.2 文章数据
+#### 4.9.2	文章数据
 
 主题配置文件：
 
@@ -508,7 +508,7 @@ post_meta:
 
 
 
-#### 4.9.3 文章字数统计&阅读时间统计
+#### 4.9.3	文章字数统计&阅读时间统计
 
 主题配置文件：
 
@@ -533,7 +533,7 @@ $ npm install hexo-symbols-count-time --save
 
 
 
-#### 4.9.4 代码块样式
+#### 4.9.4	代码块样式
 
 主题配置文件：
 
@@ -553,7 +553,7 @@ codeblock:
 
 
 
-#### 4.9.5 微信关注、打赏
+#### 4.9.5	微信关注、打赏
 
 主题配置文件：
 
@@ -578,7 +578,7 @@ reward:
 
 
 
-#### 4.9.6 相关文章
+#### 4.9.6	相关文章
 
 主题配置文件：
 
@@ -607,7 +607,7 @@ $ npm install hexo-related-popular-posts --save
 
 
 
-#### 4.9.7 在线文章编辑
+#### 4.9.7	在线文章编辑
 
 不用担心出门在外不能改文章啦
 
@@ -625,9 +625,9 @@ post_edit:
 
 
 
-### 4.10 其他主题设置
+### 4.10	其他主题设置
 
-#### 4.10.1 关闭手机百度跳转链接
+#### 4.10.1	关闭手机百度跳转链接
 
 主题配置文件：
 
@@ -638,7 +638,7 @@ disable_baidu_tranformation: true
 
 
 
-#### 4.10.2 适应小屏幕
+#### 4.10.2	适应小屏幕
 
 主题配置文件：
 
@@ -649,7 +649,7 @@ mobile_layout_economy: true
 
 
 
-#### 4.10.3 自定义logo
+#### 4.10.3	自定义logo
 
 显示在网站标题旁
 
@@ -665,7 +665,7 @@ custom_logo:
 
 
 
-#### 4.10.4 代码高亮样式
+#### 4.10.4	代码高亮样式
 
 主题配置文件：
 
@@ -678,7 +678,7 @@ highlight_theme: normal
 
 
 
-#### 4.10.5 在归档页面显示"评价"
+#### 4.10.5	在归档页面显示"评价"
 
 主题配置文件：
 
@@ -689,7 +689,7 @@ cheers_enabled: true
 
 
 
-#### 4.10.6 自定义字体
+#### 4.10.6	自定义字体
 
 主题配置文件：
 
@@ -738,7 +738,7 @@ font:
 
 
 
-### 4.11 第三方服务设置
+### 4.11	第三方服务设置
 
 大多数第三方服务要安装依赖
 
@@ -786,7 +786,7 @@ quicklink的安装方法是把dist文件夹放在`source/lib/quicklink/`中
 
 
 
-### 4.12 标签样式
+### 4.12	标签样式
 
 主题配置文件：
 
@@ -818,7 +818,7 @@ tabs:
 
 
 
-## 5.个性化
+## 5	个性化
 
 主题配置文件一律指`themes\next\_config.yml`！！
 
@@ -840,7 +840,7 @@ tabs:
 
 
 
-### 5.1 动画效果
+### 5.1	动画效果
 
 主题配置文件：
 
@@ -866,7 +866,7 @@ motion:
 
 
 
-### 5.2 加载进度条
+### 5.2	加载进度条
 
 主题配置文件：
 
@@ -903,7 +903,7 @@ pace_theme: pace-theme-center-simple
 
 
 
-### 5.3 背景动画
+### 5.3	背景动画
 
 主题配置文件：
 
@@ -921,7 +921,7 @@ pace_theme: pace-theme-center-simple
 
 
 
-### 5.4 Mist主题主页文章分割线
+### 5.4	Mist主题主页文章分割线
 
 Next是自带分割线的，只不过Mist屏蔽了而已
 
@@ -957,7 +957,7 @@ Next是自带分割线的，只不过Mist屏蔽了而已
 
 
 
-### 5.5 鼠标点击显示红心
+### 5.5	鼠标点击显示红心
 
 鼠标点击小红心在`source/js/src/cursor`文件目录下添加`love.js`文件。内容为：
 
@@ -993,13 +993,13 @@ cursor:
 
 
 
-### 5.6 修改各种参数（字体大小、背景、组件大小等）
+### 5.6	修改各种参数（字体大小、背景、组件大小等）
 
 在`source/css/ _variables/base.styl`中有各种参数包括字体大小，背景颜色之类的，而且都有注释标明
 
 
 
-### 5.7 添加Gitter即时聊天
+### 5.7	添加Gitter即时聊天
 
 首先注册[gitter](https://gitter.im/ )账号创建房间
 
@@ -1039,7 +1039,7 @@ $ npm install hexo-gitter --save
 
 
 
-### 5.8 侧边栏换到左边（Mist|Muse）
+### 5.8	侧边栏换到左边（Mist|Muse）
 
 打开`source\css\_common\components\sidebar\sidebar.styl`
 将第3行`right`改为`left`
@@ -1096,7 +1096,7 @@ $(document).ready(function () {
 
 
 
-### 5.9 NeedMoreShare按钮换到右边
+### 5.9	NeedMoreShare按钮换到右边
 
 打开`source\css\_common\components\third-party\needsharebutton.styl`
 
@@ -1146,7 +1146,7 @@ needmoreshare2:
 
 
 
-### 5.10 在小屏幕上显示返回顶部按钮（不显示侧边栏）
+### 5.10	在小屏幕上显示返回顶部按钮（不显示侧边栏）
 
 更改`source\css\_common\components\back-to-top.styl`：
 
@@ -1180,7 +1180,7 @@ needmoreshare2:
 
 
 
-### 5.11 为header添加背景图片
+### 5.11	为header添加背景图片
 
 修改`source\css\_common\components\header\header.styl`：
 
@@ -1211,7 +1211,7 @@ $head-bg                        = url('../images/background.png')
 
 
 
-### 5.12 修改超链接样式
+### 5.12	修改超链接样式
 
 修改`source\css\_common\components\post\post.styl`：
 
@@ -1238,6 +1238,8 @@ $head-bg                        = url('../images/background.png')
 ## END
 
 暂时木有更多了
+
+
 
 ### 特别鸣谢
 
